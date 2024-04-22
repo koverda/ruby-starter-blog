@@ -3,11 +3,9 @@
 <ul>
   <% @articles.each do |article| %>
   <li>
-    <div>
+    <a href="/articles/<%= article.id %>">
       <%= article.title %>
-    </div>
-    <div>
-      <%= article.body %></div>
+    </a>
   </li>
   <% end %>
 </ul>
